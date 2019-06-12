@@ -81,17 +81,18 @@ You can even change basic colors of the theme by placing some other variables:
 
 ```scss
 ...
-$panelBorder: #babdc5;
-$skinActiveColor: #e73c3c;
-$bodyColor: rgba(236, 240, 241, 0.48);
-$skinBlack: rgb(55, 71, 79);
-$panelHeaderBck: $skinBlack;
-$skinBlackLight: rgb(69, 90, 100);
-$textGray: rgb(174, 179, 181);
-$skinTextColor: #1e2a33;
-$skinTextActiveColor: white;
-$skinTextTable: #7f8c8d;
-$skinHeaderBck: #1e2a33;
+$skinActiveColor: #e73c3c;  // accent color
+$bodyColor: rgba(236, 240, 241, 0.48);  // main background color
+$skinBlack: rgb(55, 71, 79);  // sidenavi background color
+$panelHeaderBck: $skinBlack;  // panel's header background color
+$skinBlackLight: rgb(69, 90, 100);  // sidenavi hovered & nested background color
+$textGray: rgb(174, 179, 181);  // sidenavi base text color
+$skinTextColor: #1e2a33;  // text color of table title & tab text
+$skinTextActiveColor: white !important;  // sidenavi hovered link color (need important)
+$skinTextTable: #7f8c8d;  // text color of footer, pagination, download label
+$skinHeaderBck: rgb(224, 224, 224);  // title bar background color
+$siteTitleBck: $skinActiveColor;  // sitetitle background color
+$panelHeaderTextColor: $skinActiveColor;  // panel's header text color
 ...
 ```
 
